@@ -4,7 +4,7 @@ public class SingleMultiDeimentionArray {
 
 	public static void main(String[] args) {
 		
-	/*	int a[] = new int[5];
+	int a[] = new int[5];
 		a[0]=2;
 		a[1]=6;
 		a[2]=8;
@@ -23,7 +23,7 @@ public class SingleMultiDeimentionArray {
 		
 		System.out.println(b[i]);
 		}
-		*/
+		
 		//Multi-Dimensional Array
 		
 		String colors[][] = new String[2][3];
