@@ -30,17 +30,25 @@ public class ArrayListClass {
 		 
 //ArrayList with user defined data type (Using class name)
 		
-		  Employee e1 = new Employee(101,"Alan", 35000); Employee e2 = new
-		  Employee(103,"Arul", 40000); Employee e3 = new Employee(102,"Pramodh",
-		  42000); List<Employee> eList = new ArrayList<Employee>(); eList.add(e1);
-		  eList.add(e2); eList.add(e3);
+		  Employee e1 = new Employee(101,"Alan", 35000); 
+		  Employee e2 = new Employee(103,"Arul", 40000); 
+		  Employee e3 = new Employee(102,"Pramodh",42000); 
+		  List<Employee> eList = new ArrayList<Employee>(); 
+		  eList.add(e1);
+		  eList.add(e2); 
+		  eList.add(e3);
 		  
-		  Iterator<Employee> itr2= eList.iterator(); while(itr2.hasNext()) { Employee
-		  ep = (Employee) itr2.next(); System.out.println(ep.EmpolyeeID+" "+
-		  ep.EmployeeName+" "+ep.Salary); }
-		  
-		  for (Employee e : eList) { System.out.println(e.EmpolyeeID+" "+
-		  e.EmployeeName+" "+e.Salary); }
+		  Iterator<Employee> itr2= eList.iterator();
+		  while(itr2.hasNext()) 
+		  { 
+			  Employee ep = (Employee) itr2.next(); 
+			  System.out.println(ep.EmpolyeeID+" "+ep.EmployeeName+" "+ep.Salary); 
+			  }
+		 
+		  for (Employee e : eList) 
+		  { 
+			  System.out.println(e.EmpolyeeID+" "+e.EmployeeName+" "+e.Salary); 
+			  }
 		 
 //Array List with Object data type
 		
@@ -68,7 +76,7 @@ public class ArrayListClass {
 		  //Add second list to fist list
 		  
 		  L1.addAll(L2); 
- // Remove all the data of second list from first list
+// Remove all the data of second list from first list
 		  L1.removeAll(L2);
 //Retain all the data which are same 
 		  L1.retainAll(L2);
@@ -81,7 +89,10 @@ public class ArrayListClass {
 		L3.add(123);
 		L3.add(Integer.valueOf(456));
 		L3.add(2,789); // add the value based on index
-
+		
+//Set the value to Arraylist
+		L3.set(1, 457);
+		
 System.out.println(L3);
 System.out.println(L3.get(1));
 
