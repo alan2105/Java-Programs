@@ -1,5 +1,6 @@
 package collections;
 
+import java.util.Collections;
 import java.util.LinkedList;
 
 
@@ -14,6 +15,8 @@ public static void main(String[] args) {
 	
 	list.addFirst("ResctJS");
 	list.addLast("JavaScript");
+	
+	Collections.sort(list);
 	
 	System.out.println(list);
 	System.out.println(list.get(2));
