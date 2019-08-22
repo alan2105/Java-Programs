@@ -12,7 +12,7 @@ public class SuperChild extends SuperParent{
 	}
 	
 	public void getString()
-	{
+	{	
 		
 		System.out.println("Child Method");
 	}
